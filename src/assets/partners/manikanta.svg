@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="starGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Icon Emblem: Star + Digital Cable Wave -->
+  <g transform="translate(18, 16)">
+    <!-- Circular Shield Background -->
+    <rect x="0" y="0" width="108" height="108" rx="24" fill="url(#mkGrad)" />
+    
+    <!-- Radar / Signal Arcs -->
+    <path d="M 28 28 A 40 40 0 0 1 80 28" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" opacity="0.6" />
+    <path d="M 36 36 A 28 28 0 0 1 72 36" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Central Golden Star -->
+    <polygon points="54,34 59,48 74,48 62,58 66,73 54,63 42,73 46,58 34,48 49,48" 
+             fill="url(#goldGrad)" 
+             stroke="#fff" 
+             stroke-width="1.2"
+             filter="url(#starGlow)" />
+             
+    <!-- Cable / Optical Fiber Pulse at Bottom of Badge -->
+    <path d="M 24 88 Q 54 74 84 88" fill="none" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" />
+    <circle cx="54" cy="81" r="3.5" fill="#ffffff" />
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(142, 22)">
+    <!-- Primary Name: MANI KANTA -->
+    <text x="0" y="38" 
+          font-family="'Montserrat', 'Arial Black', sans-serif" 
+          font-size="34" 
+          font-weight="900" 
+          letter-spacing="0.5" 
+          fill="#0f172a">
+      MANI KANTA
+    </text>
+
+    <!-- Subtitle: STAR & CABLE NET -->
+    <text x="0" y="70" 
+          font-family="'Montserrat', 'Arial Black', sans-serif" 
+          font-size="22" 
+          font-weight="800" 
+          letter-spacing="2" 
+          fill="url(#goldGrad)">
+      STAR &amp; CABLE NET
+    </text>
+
+    <!-- Quality Tagline -->
+    <g transform="translate(0, 84)">
+      <rect x="0" y="0" width="270" height="20" rx="5" fill="#0369a1" opacity="0.09" />
+      <text x="8" y="14" 
+            font-family="'Inter', sans-serif" 
+            font-size="11" 
+            font-weight="700" 
+            letter-spacing="1.2" 
+            fill="#0284c7">
+        DIGITAL CABLE TV &amp; BROADBAND
+      </text>
+    </g>
+  </g>
+</svg>
